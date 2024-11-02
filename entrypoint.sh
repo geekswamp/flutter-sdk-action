@@ -1,0 +1,1 @@
+echo "RUNNER_TOOL_CACHE/flutter/bin" >> $GITHUB_PATH

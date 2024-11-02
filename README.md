@@ -11,7 +11,7 @@ Flutter SDK GitHub Action.
 ```yaml
   steps:
     - name: Set up Flutter
-      uses: arifai/flutter-sdk-action@v1
+      uses: geekswamp/flutter-sdk-action@v1
       with:
         channel: stable # or beta
     - run: flutter --version
@@ -24,7 +24,7 @@ Flutter SDK GitHub Action.
 ```yaml
   steps:
     - name: Set up Flutter
-      uses: arifai/flutter-sdk-action@v1
+      uses: geekswamp/flutter-sdk-action@v1
       with:
         channel: stable
     - run: flutter pub get
@@ -37,7 +37,7 @@ Flutter SDK GitHub Action.
 ```yaml
   steps:
     - name: Set up Flutter
-      uses: arifai/flutter-sdk-action@v1
+      uses: geekswamp/flutter-sdk-action@v1
       with:
         channel: stable
     - run: flutter pub get

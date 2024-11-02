@@ -10,11 +10,6 @@ inputs:
     description: Flutter SDK channel
     required: false
     default: stable
-  
-outputs:
-  channel:
-    value: ${{ steps.set_channel.outputs.channel }}
-    description: The selected Flutter SDK channel
 
 runs:
   using: composite
@@ -26,14 +21,8 @@ runs:
 
     - name: Install Flutter SDK Stable Channel
       if: ${{ env.CHANNEL == 'stable' }}
-      uses: docker://ghcr.io/arifai/flutter:stable
-      with:
-        args: 
-          flutter --version
+      uses: docker://ghcr.io/geekswamp/flutter:stable
     
     - name: Install Flutter SDK Beta Channel
       if: ${{ env.CHANNEL == 'beta' }}
-      uses: docker://ghcr.io/arifai/flutter:beta
-      with:
-        args: 
-          flutter --version
+      uses: docker://ghcr.io/geekswamp/flutter:beta
